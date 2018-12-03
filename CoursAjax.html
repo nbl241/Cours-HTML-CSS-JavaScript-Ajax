@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -15,23 +15,23 @@
         <option value="science">Science</option>
         <option value="health">Santé</option>
     </select>
-    
+
     <div class="container">
         <h1>Exemple AJAX</h1>
         <h2>Google News Api</h2>
         <div id="news" class="row">
-    
+
         </div>
     </div>
-    
+
     <script>
         function request(callback) {
             document.getElementById('news').innerHTML = '';
             // 1.Construire l'objet XMLHttpRequest'
             var xhr = new XMLHttpRequest()
-            
+
             // 2.Créer la requête ajax
-            xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=fr&category='+listCategory.value+'&apiKey=b79d53cf8bd840ef929f65987aba9617', true);
+            xhr.open('GET', 'https://newsapi.org/v2/top-headlines?country=fr&category=' + listCategory.value + '&apiKey=b79d53cf8bd840ef929f65987aba9617', true);
 
             // 3.On gère ici une requête asynchrone
             // on surveille le statut, si == 2 et statut http 200 ========> on traite la réponse
@@ -46,8 +46,8 @@
             });
             xhr.send();
         }
-        
-        function readData(sData){
+
+        function readData(sData) {
             console.log(sData);
 
             var json = JSON.parse(sData);
@@ -55,14 +55,13 @@
 
             var articles = json.articles;
 
-            for (var i = 0; i < articles.length; i++)
-            {
+            for (var i = 0; i < articles.length; i++) {
                 var article = articles[i];
                 var news = document.getElementById('news');
 
                 var monContainer = document.createElement('div');
                 monContainer.classList.add('col-sm-4', 'well', 'bloc');
-                
+
                 var divimg = document.createElement('div');
                 divimg.classList.add('col-12');
                 monContainer.appendChild(divimg);
