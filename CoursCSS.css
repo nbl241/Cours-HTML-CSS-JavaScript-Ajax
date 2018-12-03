@@ -1,0 +1,100 @@
+#slide {
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    background: #222 no-repeat center center url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw4niDcjalpHy5t9NWfnYzTZ4BEY7v7L8j6hQcSePfjKdvhBLs);
+    background-size: cover;
+}
+
+.content {
+    background: #F4F4F4;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 1px 0;
+}
+
+#slide .content {
+    color: #FFF;
+    background: #000;
+    background: rgba(0,0,0,0.3);
+    padding: 6% 40px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    justify-content: center;
+}
+
+#slide.small .content {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-top: calc(3% + 30px);
+    padding-bottom: calc(3% + 30px);
+}
+
+h1 {
+    margin: 30px 0;
+    font-size: 22px;
+    color: #F4F4F4;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+#slide.small .content h1 {
+    font-size: 38px;
+}
+
+#menu { height:50px; margin:0; padding:2px 0; background:rgb(228, 47, 62);}
+#menu span { float:left; height:50px; line-height:50px; width:25%;}
+#menu span:first-child a { margin-left:0;}
+#menu span:last-child a { margin-right:0;}
+#menu span a { display:block; height:50px; margin:0 1px; text-align:center; justify-content: center; font-weight:600; color:#FFF; text-decoration:none; font-size:20px; overflow:hidden;}
+#menu span a.actif { opacity:1;}
+
+.col-content-left {
+    float: left;
+    color: #333;
+    text-align: left;
+    margin: 15px 25px 10px 0;
+    font-size: 34px;
+    line-height: 100%;
+    max-width: 220px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #E10D16;
+}
+
+.ariane {
+    margin: 30px 30px 30px 30px;
+    line-height: 15px;
+}
+
+.col-content-right {
+    float: right;
+    width: 67%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+label {
+    display: inline-block;
+    min-width: 200px;
+}
+
+input {
+    width: 480px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 480px;
+}
+
+button{
+    margin-top: 20px;
+    background-color: skyblue;
+    border-radius: 5px;
+}

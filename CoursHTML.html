@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cours initiation HTML</title>
+    <link href="CoursCSS.css" rel="stylesheet" />
+</head>
+<body>
+    <section id="slide" class="small  catalogues ">
+        <div class="content">                
+            <h1>M2i Formation est à votre disposition pour vous renseigner sur toutes&nbsp;nos&nbsp;activités.</h1>
+        </div>
+    </section>
+    <div id="menu">
+        <span>
+            <a href="formations/informatique/" class="informatique">Informatique</a>
+        </span>
+        <span>
+            <a href="formations/bureautique-et-utilisateurs/" class="bureautique">Bureautique &amp; Utilisateurs</a>
+        </span>
+        <span>
+            <a href="formations/management/" class="management">Management</a>
+        </span>
+        <span>
+            <a href="formations/multimedia/" class="multimedia">Multimédia</a>
+        </span>
+    </div>
+    <div class="ariane">
+        <div class="col-content-left">
+            <div class="wrap">Contactez-nous</div>
+        </div>
+    </div>
+    <div class="col-content-right">
+        <form class="classic-form" method="POST" id="form-generique">
+
+            <div>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" placeholder="Prénom" required>
+                <span id='missPrenom'></span>
+            </div>
+
+            <div>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" placeholder="Nom" required>
+                <span id='missNom'></span>
+            </div>
+
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" id="email" placeholder="Adresse e-mail" required>
+                <span id='missEmail'></span>
+            </div>
+
+            <div>
+                <label for="tel">Téléphone :</label>
+                <input type="tel" id="tel" placeholder="Téléphone" required>
+                <span id='missTel'></span>
+            </div>
+
+            <div>
+                <label for="codePostal">Code postale :</label>
+                <input type="text" id="codePostale" maxlength="5" placeholder="Code postale" required>
+                <span id='missCodePostale'></span>
+            </div>
+
+            <div>
+                <label for="societe">Société :</label>
+                <input type="text" id="societe" placeholder="Société" required>
+                <span></span>
+            </div>
+
+            <div>
+                <label for="fonction">Fonction :</label>
+                <input type="text" id="fonction" placeholder="Fonction" required>
+                <span></span>
+            </div>
+
+            <div>
+                <label for="contactM2i">Contact commercial M2I :</label>
+                <input type="text" id="contactM2i" placeholder="Contact commercial M2i" required>
+                <span></span>
+            </div>
+
+            <div>
+                <label for="message">Message :</label>
+                <textarea id="message" placeholder="Message"></textarea>
+                <span></span>
+            </div>
+            
+            <button type="submit" id="boutonEnvoi">Envoyer</button>
+        </form>   
+    </div>
+    <script src="Cours_JavaScript.js"></script>
+</body>
+</html>
